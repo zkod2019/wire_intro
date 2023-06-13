@@ -1,5 +1,7 @@
 package main
 
+// tutorial from: https://www.youtube.com/watch?v=yjCIeT5eWBo&ab_channel=MileHighGophers
+
 import (
 	"errors"
 	"fmt"
@@ -45,7 +47,7 @@ func (g greeter) greet() string {
 
 func newEvent(g greeter) (event, error) {
 	// return event{greeter: g}
-	return event{}, errors.New("Failed Event")
+	return event{}, errors.New("failed event")
 }
 
 type event struct {
